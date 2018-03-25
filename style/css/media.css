@@ -1,0 +1,159 @@
+/*Adaptive Header*/
+@media only screen and (max-width : 992px) {
+	header .container .left_head .menu .cart {
+	    width: 60px;
+	    margin-left: 4px;
+	}
+	header .container .left_head .menu_wrap .menu {
+		width: 530px;
+	}
+	header .container .left_head .menu ul li:after {
+		margin-left: 2px;
+	}
+}
+
+@media only screen and (max-width : 870px) {
+	.logo {
+		display: none;
+	}
+	header .container {
+		-webkit-justify-content: flex-end;
+        justify-content: flex-end;
+	}
+}
+
+@media only screen and (max-width : 720px) {
+	header .container .left_head .menu_wrap .menu {
+		display: none;
+	}
+	header .container .left_head .menu_wrap {
+		-webkit-justify-content: flex-end;
+		        justify-content: flex-end;
+	}
+}
+
+@media only screen and (max-width : 640px) {
+	.tel,
+	.accaunt,
+	.lang {
+		display: none;
+	}
+	.left_head {
+		display: flex;
+		-webkit-align-items: baseline;
+        align-items: baseline;
+	}
+	header .container .left_head .menu .cart {
+		background: #fff;
+		font-size: 0;
+	}
+}
+/*Adaptive slider*/
+@media only screen and (max-width : 800px) {
+	.slider {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	.slider .slide_photo {
+		position: static;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.slide {
+		max-width: 350px;
+		margin: 0 auto;
+	}
+	.slide_photo {
+		max-width: 350px;
+	}
+	.slider .slide_button {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.slide {
+		max-width: 290px;
+	}
+	.slide_photo{
+		width: 30%;
+		margin: 0 auto;
+	}
+	.slider .slide h2 {
+		font-size: 30px;
+	}
+	.slider .slide p {
+		font-size: 12px;
+	}
+	.slider .slide_button a {
+		font-size: 14px;
+	}
+
+}
+
+
+
+/*Adaptive Products*/
+@media only screen and (max-width : 992px) {
+	.products {
+		-ms-overflow-x: scroll;
+		    overflow-x: scroll;
+	}
+}
+
+
+/*Adaptive Form*/
+@media only screen and (max-width : 790px) {
+	.form_wrap .form_left {
+		float: none;
+		margin: 0 auto;
+	}
+	.form_wrap .form_right {
+		float: none;
+		margin: 0 auto;
+	}
+	textarea {
+		max-width: 350px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	input[name="organization"],
+	input[name="date"],
+	.form_wrap #profession-button {
+		display: none;
+	}
+	.form_wrap {
+		padding: 40px 15px;
+	}
+	.section_form .container {
+		padding: 0;
+	}
+	.form_wrap h3 {
+		display: none;
+	}
+	.form_wrap .new_h {
+		display: block;
+	}
+	.form_wrap textarea {
+		margin-bottom: 40px;
+	}
+	.form_wrap .submit {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 350px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	footer .container {
+		margin-top: 120px;
+		display: block;
+		text-align: center;
+	}
+	footer .container > p {
+		margin-bottom: 30px;
+	}
+}

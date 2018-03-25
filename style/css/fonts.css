@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Dinpro-bold;
+    src: url(../../fonts/dinpro/dinpro-bold.otf);
+}
+
+@font-face {
+    font-family: Dinpro-light;
+    src: url(../../fonts/dinpro/dinpro-light.otf);
+}
+
+@font-face {
+    font-family: Dinpro-medium;
+    src: url(../../fonts/dinpro/dinpro-medium.otf);
+}
+
+@font-face {
+    font-family: SegoeUi;
+    src: url(../../fonts/segoe_ui/segoe_ui_semilight.ttf);
+}

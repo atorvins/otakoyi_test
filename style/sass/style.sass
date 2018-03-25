@@ -1,0 +1,363 @@
+*
+	padding: 0
+	margin: 0
+	font-family: "SegoeUi"
+	
+.container
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 15px
+	
+body
+	background-image: url(../../img/bg.png)
+	background-repeat: no-repeat
+	
+header
+	.container
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		padding-top: 14px
+		padding-bottom: 6px
+		.left_head
+			a
+				text-decoration: none
+				color: #3a2020 
+				font-family: "Dinpro-medium" 
+			.top_menu
+				display: flex
+				float: right
+				margin-bottom: 35px
+				a
+					color: #717274
+					font-family: "SegoeUi"
+				.search
+					background-image: url(../../img/search.png)
+					width: 16px
+					height: 15px
+				.tel
+					border-bottom: 1px dashed #b8b8b9
+					position: relative
+					margin-left: 25px
+					padding-right: 12px
+					&:after
+						content: ""
+						width: 7px
+						height: 4px
+						background-image: url(../../img/menu_arrow.png)
+						position: absolute
+						top: 9px
+						margin-left: 133px
+						cursor: pointer
+				.accaunt
+					background-image: url(../../img/profile.png)
+					background-repeat: no-repeat
+					background-position: center left 
+					margin-left: 30px
+					padding-left: 23px
+				.lang
+					margin-left: 23px
+					background-image: url(../../img/worldwide.png)
+					background-repeat: no-repeat
+					background-position: center left 
+					padding-left: 21px
+					padding-right: 15px
+					position: relative
+					&:after
+						content: ""
+						width: 7px
+						height: 4px
+						background-image: url(../../img/menu_arrow.png)
+						position: absolute
+						top: 9px
+						margin-left: 25px
+						cursor: pointer
+
+			// MENU
+			.menu_wrap
+				display: flex
+				-webkit-align-items: baseline
+				align-items: baseline
+				clear: both
+				.menu
+					display: flex
+					-webkit-justify-content: space-between
+					justify-content: space-between
+					list-style: none
+					width: 590px
+					padding-right: 12px
+					&>li
+						position: relative
+						padding-bottom: 8px
+						&:hover .submenu
+							display: block
+						&:after
+							content: ""
+							width: 7px
+							height: 4px
+							background-image: url(../../img/menu_arrow.png)
+							position: absolute
+							top: 9px
+							right: -10px
+							cursor: pointer
+					a
+						text-transform: uppercase
+				.cart
+					display: flex
+					-webkit-align-items: center
+					align-items: center
+					-webkit-justify-content: center
+					justify-content: center
+					width: 95px
+					height: 36px
+					background: #f6f6f6 
+					margin-left: 30px
+					p
+						margin-left: 9px
+						color: #717274
+				.submenu
+					position: absolute
+					top: 25px
+					left: 10px
+					z-index: 10
+					display: none
+					list-style: none
+				
+.slider	
+	max-width: 830px
+	min-height: 533px
+	margin: 0	 auto
+	position: relative
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	margin-top: 120px	
+	.slide
+		&_photo
+			position: absolute
+			top: 0
+			right: 0
+			img
+				width: 100%
+		h2
+			color: #F6303E
+			text-transform: uppercase
+			font-size: 36px
+			margin-bottom: 40px
+			padding-top: 50px
+		p
+			max-width: 350px
+		&_button
+			max-width: 180px
+			height: 60px
+			background: linear-gradient(to right, #1b1b1b, #453f3f)
+			text-align: center
+			margin-top: 60px
+			a
+				text-transform: uppercase
+				font-family: "Dinpro-medium" 
+				line-height: 60px
+				color: #FFF
+				text-decoration: none
+
+.product_head
+	text-align: center
+	margin-bottom: 50px
+	h2
+		text-transform: uppercase
+		font-family: "Dinpro-bold"
+		font-size: 30px
+		color: #202945  
+	a
+		font-size: 14px
+		color: #D60202 
+		position: relative
+		text-decoration: none
+		&:after
+			content: ""
+			position: absolute
+			height: 4px
+			width: 4px
+			top: 9px
+			border-bottom: 1px solid #d60202
+			border-right: 1px solid #d60202
+			transform: rotate(-45deg)
+.products
+	display: flex
+	-webkit-justify-content: space-between
+	justify-content: space-between
+	// overflow: hidden
+	// -ms-overflow-x: scroll 
+	// overflow-x: scroll 
+	.product
+		max-width: 255px
+		min-width: 220px
+		padding: 0 10px
+		&_photo
+			max-width: 255px
+			min-width: 220px
+			height: 315px
+			display: flex
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
+			position: relative
+		.action
+			width: 38px
+			height: 18px
+			// padding: 5px 6px 2px 4px
+			border: 1px solid #d60202
+			text-align: center
+			text-transform: uppercase
+			font-size: 10px
+			color: #D60202 
+			-webkit-box-sizing: border-box 
+			-moz-box-sizing: border-box 
+			box-sizing: border-box 
+			position: absolute
+			top: 15px
+			right: 15px
+			z-index: 10
+			img
+		h3
+			text-align: center
+			font-size: 16px
+			color: #212121
+			font-family: "Dinpro-bold" 
+			margin-top: 43px
+			margin-bottom: 14px
+		p
+			font-size: 14px
+
+
+.product_hover
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,0.9)
+	.cart_button
+		width: 160px
+		height: 48px
+		background-color: #F6303E 
+		text-align: center
+		margin: 80px auto 19px
+	a
+		text-transform: uppercase
+		text-decoration: none
+		color: #FFF
+		font-size: 14px
+		line-height: 48px
+	.info
+		width: 160px
+		height: 48px
+		border: 1px solid #FFF
+		text-align: center
+		font-style: 14px
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		margin: 0 auto
+	.price
+		color: #F6303E
+		padding-left: 20px
+		margin: 56px 0 10px
+		text-decoration: line-through 
+		font-family: "Dinpro-medium"
+		font-size: 16px
+	.action_price
+		color: #FFF
+		padding-left: 20px
+		font-family: "Dinpro-medium"
+		font-size: 20px
+
+.product
+	&:hover
+		h3
+			color: #DC2F2F
+			cursor: pointer
+
+.product:hover .product_hover
+	display: block
+	
+
+.form_wrap
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	max-width: 950px
+	margin: 0 auto
+	background: linear-gradient(to bottom right, #f7f7f7, #dcdcdc)
+	margin-top: 125px
+	padding: 60px 10px
+	.form
+		max-width: 730px
+		margin: 0 auto
+		&_left
+			float: left
+			max-width: 350px
+		&_right
+			float: right
+			max-width: 350px
+	h3, .new_h
+		text-align: center
+		color: #202945
+		font-family: "Dinpro-bold"
+		font-size: 30px
+		margin-bottom: 50px
+	.new_h
+		font-size: 26px
+		display: none
+	input, #profession-button, textarea
+		width: 100%
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		margin-bottom: 26px
+		border: 1px solid #b0bec1
+		font-size: 16px
+		padding: 10px
+		color: #717274
+		&:focus
+			border: 1px solid #202945
+	.date
+		background: url(../../img/calendar.png) no-repeat #fff 95% 50%
+	.submit
+		max-width: 150px
+		height: 48px
+		background-color: #F6303E
+		text-transform: uppercase
+		font-size: 14px
+		color: #FFF
+		display: block
+		margin: 0 auto
+		margin-top: 50px
+// SELECTMENU jQuere		
+#profession-button
+	background: url(../../img/down-arrow.png) no-repeat #fff 95% 50%
+.ui-button .ui-icon
+	display: none
+	
+footer
+	.container
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin-top: 183px
+		padding-bottom: 28px
+		p
+			color: #CA1919
+			font-size: 14px
+			&+p
+				color: #3f5b69
+				span
+					text-transform: uppercase
+					font-weight: 800 
+					
+.pagg_pos
+	position: relative				
+	.pagg
+		position: absolute
